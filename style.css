@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .bg-pattern-top {
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.container .bg-pattern-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container .hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .hero .hero-left {
+  width: 30%;
+}
+
+.container .hero .hero-left h1 {
+  font-size: 56px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 1rem;
+  line-height: 3rem;
+}
+
+.container .hero .hero-left p {
+  font-size: 15px;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.5rem;
+}
+
+.container .hero .hero-right .hero-rectangle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container .hero .hero-right .hero-rectangle .hero-rectangle-first {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.container .hero .hero-right .hero-rectangle .hero-rectangle-first h5 {
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+}
+
+.container .hero .hero-right .hero-rectangle .hero-rectangle-second {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.container .hero .hero-right .hero-rectangle .hero-rectangle-second h5 {
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+}
+
+.container .hero .hero-right .hero-rectangle .hero-rectangle-third {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem;
+  margin-left: 4rem;
+}
+
+.container .hero .hero-right .hero-rectangle .hero-rectangle-third h5 {
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+}
+
+.container .card-list {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  gap: 25px;
+}
+
+.container .card-list .card {
+  width: 350px;
+  height: 250px;
+  background-color: hsl(300, 43%, 22%);
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+
+.container .card-list .card-second {
+  margin-top: 2rem;
+}
+
+.container .card-list .card-third {
+  margin-top: 4rem;
+}
+
+.container .card-list .card .card-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.container .card-list .card .card-profile img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.container .card-list .card .card-profile h4 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0.2rem;
+}
+
+.container .card-list .card .card-profile span {
+  color: hsl(333, 80%, 67%);
+  opacity: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0.2rem;
+}
+
+.container .card-list .card .card-body {
+  color: white;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container .card-list .card {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container .hero {
+    flex-direction: column;
+  }
+
+  .container .hero .hero-left {
+    width: 50%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .container .hero .hero-right .hero-rectangle {
+    margin-top: 2rem;
+  }
+
+  .container .hero .hero-right .hero-rectangle .hero-rectangle-second {
+    margin-left: 0;
+  }
+
+  .container .hero .hero-right .hero-rectangle .hero-rectangle-third {
+    margin-left: 0;
+  }
+
+  .container .card-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container .bg-pattern-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container .hero .hero-left {
+    width: 100%;
+  }
+
+  .container .hero .hero-left h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .container .hero .hero-left p {
+    font-size: 15px;
+  }
+
+  .container .hero .hero-right .hero-rectangle .hero-rectangle-first h5 {
+    font-size: 13px;
+  }
+
+  .container .hero .hero-right .hero-rectangle .hero-rectangle-second h5 {
+    font-size: 13px;
+  }
+
+  .container .hero .hero-right .hero-rectangle .hero-rectangle-third h5 {
+    font-size: 13px;
+  }
+}
